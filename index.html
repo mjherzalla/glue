@@ -16,9 +16,9 @@
     integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
- 
+
 
 </head>
 
@@ -28,17 +28,17 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading"> 
-          
+      <div class="sidebar-heading">
+
       </div>
       <div class="list-group list-group-flush">
-          <div href="#" class="list-group-item list-group-item-action bg-light"> Teams <i class="fas fa-plus   add"></i>
-              <ul id="teamsList"style="list-style-type:none;">
-                <li><b>@</b>designers</li>
-                <li class="selectedTeam"><b>@</b>developers</li>
-                <li><b>@</b>marketing</li>
-              </ul>
-            </div>
+        <div href="#" class="list-group-item list-group-item-action bg-light"> Teams <i class="fas fa-plus   add"></i>
+          <ul id="teamsList" style="list-style-type:none;">
+            <li><b>@</b>designers</li>
+            <li class="selectedTeam"><b>@</b>developers</li>
+            <li><b>@</b>marketing</li>
+          </ul>
+        </div>
         <div href="#" class="list-group-item list-group-item-action bg-light">Boards <i class="fas fa-plus  add"></i>
           <ul style="list-style-type:none;">
             <li>#general</li>
@@ -62,16 +62,16 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
         <i class="fas fa-times" id="menu-toggle"></i>
         <img src="https://image.flaticon.com/icons/svg/178/178327.svg" width="35" style="margin-left: 15px;">
         Glue
         <div class="input-group  input-group-sm" style="  margin-left: 50px;  margin-right: 50px;">
-             
-            <input type="text" class="form-control" placeholder="teams ,boards ,member.." >
-            <div class="input-group-append">
-              <span class="input-group-text"><i class="fas fa-search"></i></span>
-            </div>
+
+          <input type="text" class="form-control" placeholder="Search Glue..">
+          <div class="input-group-append">
+            <span class="input-group-text"><i class="fas fa-search"></i></span>
+          </div>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,97 +102,180 @@
         </div>
       </nav>
 
-      <div class="container-fluid" style="padding-top: 10px;">
-         
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-                    #general <i class="fas fa-times"></i> 
-                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
-                    <img class="thumUserPic" src="https://randomuser.me/api/portraits/thumb/men/92.jpg">Miracle  <i class="fas fa-times"></i>
-                </a>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <div class="jumbotron">
-                      <h3 class="display-4">@developers</h3>
-                      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                      <hr class="my-4">
-                      
-                      <p class="lead">
-                        <a class="btn btn-primary btn-sm" href="#" role="button">Add Calender</a>
-                        <a class="btn btn-primary btn-sm" href="#" role="button">Add Repository analysis</a>
-                      </p>
-                    </div>
+      <div class="container-fluid" style="padding-top: 70px;">
 
-                  <canvas id="myChart" width="400" height="400"></canvas>
-              </div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                  <div class="mesgs">
-                      <div class="msg_history">
-                        <div class="incoming_msg">
-                          <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                          <div class="received_msg">
-                            <div class="received_withd_msg">
-                              <p>Test which is a new approach to have all
-                                solutions</p>
-                              <span class="time_date"> 11:01 AM    |    June 9</span></div>
-                          </div>
-                        </div>
-                        <div class="outgoing_msg">
-                          <div class="sent_msg">
-                            <p>Test which is a new approach to have all
-                              solutions</p>
-                            <span class="time_date"> 11:01 AM    |    June 9</span> </div>
-                        </div>
-                        <div class="incoming_msg">
-                          <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                          <div class="received_msg">
-                            <div class="received_withd_msg">
-                              <p>Test, which is a new approach to have</p>
-                              <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
-                          </div>
-                        </div>
-                        <div class="outgoing_msg">
-                          <div class="sent_msg">
-                            <p>Apollo University, Delhi, India Test</p>
-                            <span class="time_date"> 11:01 AM    |    Today</span> </div>
-                        </div>
-                        <div class="incoming_msg">
-                          <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                          <div class="received_msg">
-                            <div class="received_withd_msg">
-                              <p>We work directly with our designers and suppliers,
-                                and sell direct to you, which means quality, exclusive
-                                products, at a price anyone can afford.</p>
-                              <span class="time_date"> 11:01 AM    |    Today</span></div>
-                          </div>
-                        </div>
-                      </div>
-                   
-                    </div>
-                    <div class="type_msg">
-                        <div class="input_msg_write">
-                          <input type="text" class="write_msg" placeholder="Type a message" />
-                          <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                        </div>
-                      </div>
-                  </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+              aria-selected="true">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false">
+              #general <i class="fas fa-times"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+              aria-selected="false">
+              <img class="thumUserPic" src="https://randomuser.me/api/portraits/thumb/men/92.jpg">Miracle <i
+                class="fas fa-times"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="jumbotron">
+              <h3 class="display-4">@developers</h3>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+              <hr class="my-4">
 
-              </div>
-              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+              <p class="tools">
+                <b>Team Tools</b><br>
+                
+                <span id="filesbtn"class="badge badge-primary"><i class="far fa-file"></i> Files 60</span>
+                <span id="repobtn" class="badge badge-warning"><i class="fas fa-code-branch"></i> Repository activity</span>
+                <span id="calbtn"class="badge badge-danger"><i class="far fa-calendar-alt"></i> Calander</span>
+                <span class="badge badge-primary"><i class="fas fa-tasks"></i> Weekly Tasks</span>
+                <span class="badge badge-info"><i class="fas fa-plus"></i></span>
+              </p>
             </div>
+            <div class="rp"></div>
+            <canvas id="myChart" width="400" height="400"></canvas>
+            <div class="reposummry">
+             repo: <code>https://github.com/mjherzalla/glue.git</code><br>
+             branchs:   <span class="badge badge-success"><i class="fas fa-code-branch"></i> master</span>
+             <span class="badge badge-success"><i class="fas fa-code-branch"></i> dev</span>
+             <span class="badge badge-success"><i class="fas fa-code-branch"></i> testing</span>
+
+              <h4>Last 5 pull Requesrts </h4>
+
+              <ul style="list-style-type:square;">
+                <li>Mike <i class="far fa-clock">Today 9pm</i></li>
+                <li>mona <i class="far fa-clock">Today 8pm</i></li>
+                <li>Mark <i class="far fa-clock">Today 9am</i></li>
+                <li>mera <i class="far fa-clock">Today 8am</i></li>
+                <li>amed <i class="far fa-clock">Today 7am</i></li>
+              </ul>
+            </div>
+          
+            <hr>
+           
+            <img src="cal.PNG" width="100%">
+             <div class="cal"></div>
+            <hr>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>File</th>
+                    <th>Description </th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="far fa-file-archive"></i>project</td>
+                    <td>porject file</td>
+                    <td><i class="fas fa-download"></i></td>
+                  </tr>
+                  <tr>
+                    <td><i class="far fa-file-image"></i>img</td>
+                    <td>image for banner</td>
+                    <td><i class="fas fa-download"></i></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-pencil-ruler"></i>design</td>
+                    <td>rough lyout </td>
+                    <td><i class="fas fa-download"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            <div class="files"></div>
+
+
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="mesgs">
+              <div class="msg_history">
+                <div class="incoming_msg">
+                  <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                      alt="sunil"> </div>
+                  <div class="received_msg">
+                    <div class="received_withd_msg">
+                      <p>Test which is a new approach to have all
+                        solutions</p>
+                      <span class="time_date"> 11:01 AM | June 9</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="outgoing_msg">
+                  <div class="sent_msg">
+                    <p>Test which is a new approach to have all
+                      solutions</p>
+                    <span class="time_date"> 11:01 AM | June 9</span>
+                  </div>
+                </div>
+                <div class="incoming_msg">
+                  <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                      alt="sunil"> </div>
+                  <div class="received_msg">
+                    <div class="received_withd_msg">
+                      <p>Test, which is a new approach to have</p>
+                      <span class="time_date"> 11:01 AM | Yesterday</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="outgoing_msg">
+                  <div class="sent_msg">
+                    <p>Apollo University, Delhi, India Test</p>
+                    <span class="time_date"> 11:01 AM | Today</span>
+                  </div>
+                </div>
+                <div class="incoming_msg">
+                  <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                      alt="sunil"> </div>
+                  <div class="received_msg">
+                    <div class="received_withd_msg">
+                      <p>We work directly with our designers and suppliers,
+                        and sell direct to you, which means quality, exclusive
+                        products, at a price anyone can afford.</p>
+                      <span class="time_date"> 11:01 AM | Today</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="type_msg">
+              <div class="input_msg_write">
+              <i class="fab fa-google-drive"></i>
+              <i class="fas fa-pencil-ruler"></i>
+              <i class="fas fa-calendar-plus"></i>  
+                  <input type="text" class="write_msg" placeholder="Type a message" />
+              </div>
+             
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
       </div>
     </div>
-    <!-- /#page-content-wrapper -->
 
+  </div>
+  <!-- /#page-content-wrapper -->
+   <div class="recentbuble ">
+      <i class="fas fa-history"></i>
+   </div>
+   <div class="recnetconver">
+    
+        <span> <img class="thumUserPic" src="https://randomuser.me/api/portraits/thumb/women/43.jpg">Axelle  </span>
+          <span><img class="thumUserPic" src="https://randomuser.me/api/portraits/thumb/men/69.jpg">Rudolf  </span>
+            <span> <img class="thumUserPic" src="https://randomuser.me/api/portraits/thumb/men/85.jpg">Santiago </span>
+        
+          
+   </div>
   </div>
   <!-- /#wrapper -->
 
@@ -219,7 +302,7 @@
 
 
     }
-    
+
 
 
 
@@ -238,19 +321,19 @@
         if (this.readyState == 4 && this.status == 200) {
           var users = JSON.parse(this.responseText);
           console.log(users.results);
-           for (var i=0;i<users.results.length;i++) {
-           $("#usersList").append('<li>'+'<img class="thumUserPic"src="'+users.results[i].picture.thumbnail+'">'+users.results[i].name.first+'<i class="far fa-comment add"></i></li>');
-           }
+          for (var i = 0; i < users.results.length; i++) {
+            $("#usersList").append('<li>' + '<img class="thumUserPic"src="' + users.results[i].picture.thumbnail + '">' + users.results[i].name.first + '<i class="far fa-comment add"></i></li>');
+          }
 
         }
       };
-      xhttp.open("GET", "https://randomuser.me/api/?results=10", true);
+      xhttp.open("GET", "https://randomuser.me/api/?results=5", true);
       xhttp.send();
     }
 
     loadusers();
   </script>
- <script src="js.js"></script>
+  <script src="js.js"></script>
 </body>
 
 </html>

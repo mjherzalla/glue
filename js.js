@@ -4,9 +4,9 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Mike', 'mona', 'Mark', 'mera', 'amed', 'mooe'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Summary of repository activity',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -38,3 +38,24 @@ var myChart = new Chart(ctx, {
     }
 });
  
+
+
+
+$("#calbtn").click(function() {
+     
+    $('html,body,.tab-content').animate({
+        scrollTop: $(".cal").offset().top},
+        'slow')
+});
+$("#repobtn").click(function() {
+     
+    $('html,body,.tab-content').animate({
+        scrollTop: $(".rp").offset().top},
+        'slow')
+});
+$("#filesbtn").click(function() {
+     
+    $('html,body,.tab-content').animate({
+        scrollTop: $(".files").offset().top},
+        'slow')
+});

@@ -1,11 +1,31 @@
-
+#menu-toggle{
+  cursor: pointer;
+}
+code{
+  background-color: #ebebeb;
+  padding: 3px;
+  border-radius: 2px;
+}
+.tab-content{
+  height: 80vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.fa-clock{
+  float:right;
+}
+.reposummry{
+  float:left
+}
  .add {
   float:right;
   margin-top: 2px;
+  cursor: pointer;
 }
 canvas{
-  max-width: 400px;
-  margin-right: 400px;;
+  float:left;
+  max-width: 300px;
+  margin-right: 300px;
 }
 .thumUserPic{
   width: 30px;
@@ -204,15 +224,25 @@ img{ max-width:100%;}
   color: #4c4c4c;
   font-size: 15px;
   min-height: 48px;
-  width: 100%;
-}
+  width: 60%;
 
+}
+.input_msg_write i{
+  font-size: 22px;
+  color:#76cdce ;
+  margin: 10px;
+
+}
+.badge{
+  cursor: pointer;
+}
 .type_msg {
   border : 1px solid #c4c4c4;
   position: absolute;
- 
-  padding:5px;
+ width:100%;
+  padding:15px;
   bottom: 0px;
+  background: white;
 }
 .msg_send_btn {
   background: #05728f none repeat scroll 0 0;
@@ -231,4 +261,57 @@ img{ max-width:100%;}
 .msg_history {
   height: 516px;
   overflow-y: auto;
+}
+.recentbuble{
+  border: 1px solid #76cdce;
+  padding: 18px;
+  border-radius: 50%;
+  position: fixed;
+  bottom:10%;
+  right: 7%;
+  width: 70px;
+  height: 70px;
+  background-color: #f4511e;
+  z-index: 1000;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition:         transform .5s ease-in-out;
+}
+.recentbuble:hover + .recnetconver {
+  display: block;
+   cursor: pointer;
+ 
+  
+}
+.recnetconver{
+  display: none;
+  border: 1px solid #f4511e;
+  padding: 18px;
+  border-radius: 5px;
+  position: fixed;
+  bottom:10%;
+  right: 9%;
+  width: 420px;
+  height: 70px;
+  background-color: white;
+  z-index: 8;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition:         transform .5s ease-in-out;
+}
+.recnetconver:hover{
+display: block;
+}
+.recnetconver span{
+  margin-right: 10px;
+  border : solid white 1px;
+  padding: 10px;
+}
+ 
+.recnetconver span:hover{
+  border : solid red 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.recentbuble i{
+  font-size: 30px;
+  color: white;
 }
