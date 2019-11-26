@@ -315,3 +315,7 @@ display: block;
   font-size: 30px;
   color: white;
 }
+ul li:hover{
+  color: hotpink;
+  cursor: pointer;
+}
